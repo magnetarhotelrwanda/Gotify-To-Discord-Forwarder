@@ -41,7 +41,7 @@ cd your-repository
 Install the required Python dependencies using pip:
 
 ```
-pip install -r requirements.txt
+pip install websockets && pip install requests
 ```
 
 ### 4. Running the Script
@@ -175,7 +175,3 @@ This command displays logs specific to the `forward-gotify-to-discord` service.
 - Adjust paths (`WorkingDirectory` and `ExecStart`) in the `.service` file to match your script's location and environment.
 - Ensure your Python script is executable (`chmod +x` if needed).
 - This setup ensures that your Python script runs as a service, automatically starting on system boot and managed by `systemd`, providing reliability and ease of management. Adjust configurations as necessary based on specific requirements or system setup.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
